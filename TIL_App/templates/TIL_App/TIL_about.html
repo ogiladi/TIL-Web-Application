@@ -1,0 +1,39 @@
+{% extends 'TIL_App/TIL_base.html' %}
+
+
+{% block appcontent %}
+
+  <div class="text-container-small background-white-trans">
+
+    <h1>Did You Know?</h1>
+    <h3>Learn something new at a click of a button</h3>
+    <br>
+    <p>
+      This webpage uses Django to run python and
+      uses the <a target="_blank" class='color-link' href="https://praw.readthedocs.io/en/latest/">PRAW</a>
+       (Python Reddit API Wrapper) to extract content from
+      <a target="_blank" class='color-link' href="https://www.reddit.com/r/todayilearned/">
+        Reddit's TIL
+      </a>
+      (today I learned) subreddit.
+      The app takes threads and then stores them on a SQLite database. When a user clicks a button, a random
+      thread from the database is selected. To see the full code, see my <a class="color-link" target="_blank" href="https://github.com/ogiladi">
+        GitHub page
+      </a>.
+    
+      To learn more on the background picture, see <a class="color-link" target="_blank" href="https://en.wikipedia.org/wiki/The_School_of_Athens">
+        Wikipedia
+      </a>.
+    </p>
+    <p>
+      To go back to the main page of this app, click <a class="color-link" href="{% url 'TIL:welcome' %}">
+        here
+      </a>.
+    </p>
+  </div>
+
+{% endblock %}
+
+{% block bottom_btn %}
+<a class='btn btn-sm btn-dark' href="{% url 'TIL:home' %}">Back to main page</a>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'TIL_App/TIL_base.html' %}
+
+{% block appcontent %}
+
+<div class="top-center background-white-trans">
+    <h1>Did You Know?</h1>
+    <h3>Learn something new at a click of a button</h3>
+    <br>
+    <form method="POST">
+        {{form.as_p}}
+        {% csrf_token %}
+        <input type="submit" class="btn btn-dark btn-lg" value="Submit">
+    </form>
+    <p>Client id and client secret can be obtained <a href="https://www.reddit.com/prefs/apps/" target="_blank" class="">here</a></p>
+</div>
+
+{% endblock %}

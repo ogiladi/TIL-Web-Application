@@ -1,0 +1,367 @@
+
+/* Global Styles */
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#myCanvas {
+    width: 100%;  
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    margin: 0;
+    padding: 0;  
+}
+
+.background {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.background-pttrn-blue {
+  background: url(../images/pattern_blue.png) fixed;
+}
+
+.background-pttrn-gray {
+  background: url(../images/pattern_gray.jpg) fixed;
+}
+
+.background-school {
+  background: url(../images/school.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.background-hilbert {
+  background: url(../images/hilbert.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.background-mandelbrot {
+  background: url(../images/mandelbrot.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.background-coll {
+  background: url(../images/collatz.jpg) fixed;
+}
+
+.background-white {
+  background: rgba(255,255,255,0.95);
+  border: 1px solid rgba(200, 200, 200, 0.8);
+}
+
+.background-white-trans {
+  background: rgba(255,255,255,0.75);
+  border: 1px solid rgba(200, 200, 200, 0.8);
+}
+
+.background-transparent {
+  background: rgba(255,255,255,0.35);
+}
+
+.background-gray {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.most-screen {
+  width:100%;
+  height: 92%;
+  border: 1px solid transparent;
+}
+
+
+/* Float boxes */
+
+.float-box-large {
+  display: inline-block;
+  margin: 2px;
+  width: 32%;
+  min-width: 200px;
+}
+
+.float-box-small {
+  float: right;
+  margin-right: .6em;
+  margin-top: 10px;
+}
+
+
+/* Fade in effect */
+
+
+.fadein {
+  visibility: hidden;
+}
+
+/* Text body for the TIL app */
+
+.text-vertical-center {
+  position: relative;
+  width: 70%;
+  margin: auto;
+  margin-top: 9%;
+  text-align: center;
+}
+
+/* Text containers */
+
+.content-text {
+  background-color: rgba(220, 224, 232, 0.7);
+  padding: 0.5%;
+  max-height: 210px;
+  overflow-y: scroll;
+}
+
+.text-container {
+  position: absolute;
+  top: 8%;
+  bottom: 8%;
+  left: 7%;
+  right: 7%;
+  width: 86%;
+  height: 84%;
+  padding: .5em 2em 2em 2em;
+  text-align: justify;
+  overflow-y: scroll;
+}
+
+.text-container-small {
+  text-align: center;
+  position: absolute;
+  top: 15%;
+  bottom: 15%;
+  left: 12%;
+  right: 12%;
+  width: 76%;
+  height: 70%;
+  padding: .5em 2em 2em 2em;
+  overflow-y: scroll;
+}
+
+/* Text body */
+
+.outer-center {
+  position: relative;
+  z-index: 1;
+  display: table;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.middle-center {
+  margin: 0;
+  padding: 0;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner-center {
+  display: table;
+  margin: auto;
+  padding: 1%;
+  max-width: 80%;
+  text-align: justify;
+}
+
+.top-center {
+  margin: 100px auto;
+  padding: 1%;
+  text-align: center;
+  display: table;
+}
+
+/* Table styles */
+
+.table {
+  font-size: 1.2em;
+  width: 90%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+
+/*Text styles */
+
+.text-center {
+  text-align: center;
+}
+
+h1 {
+    font-size: 4.5em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+h3 {
+    font-size: 1.6em;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+  font-size: 2em;
+}
+
+.small-text {
+  font-size: 1.5em;
+}
+
+/* input box style */
+
+.inp {
+  margin-right: 20px;
+  border-radius: 0px;
+  border: 1px solid rgba(50, 50, 50, 0.8);
+  background-color: rgba(220, 220, 220, 0.6);
+  width: 250px;
+  color: rgba(50, 50, 50, 0.8);
+}
+
+
+
+
+/* Menu button */
+
+
+.menu-button {
+  position: absolute;
+  text-align: center;
+  top: .5em;
+  right: .5em;
+  z-index: 2;
+}
+
+.about-button {
+  position: absolute;
+  text-align: center;
+  top: .5em;
+  left: .5em;
+  z-index: 2;
+}
+
+.glyph-btn {
+  font-size: 2em;
+  padding: .6em;
+  z-index: 2;
+}
+
+
+
+/* Button Styles */
+
+.btn-dark {
+    color: #fff;
+    background-color: rgba(0, 0, 0, .6);
+    border-radius: 0px;
+}
+
+.btn-lg {
+  font-size: 1.2em;
+}
+
+.btn-sm {
+  font-size: 1em;
+}
+
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.nav .btn-dark:hover,
+.nav .btn-dark:active,
+.nav .btn-dark:focus {
+    color: #fff;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+/* Color link */
+
+
+.color-link,
+.color-link:hover,
+.color-link:active,
+.color-link:visited,
+.color-link:focus {
+  text-decoration: none;
+}
+
+
+
+/* Side Menu */
+
+/* The side navigation menu */
+.sidenav {
+    right: 0;
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Stay on top */
+    top: 0;
+    background-color: #222; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
